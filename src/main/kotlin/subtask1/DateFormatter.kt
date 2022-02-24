@@ -16,7 +16,7 @@ class DateFormatter {
         )
         val dayOutFormat = SimpleDateFormat("d M, yyyy", Locale("RU"))
         val dayIn = ("$day $month, $year")
-        val dayOut = (dayOutFormat.format(myDate.getTime())).toString()
+        val dayOut = (dayOutFormat.format(myDate.getTime()))
         if (dayIn == dayOut) {
             val fullDate = SimpleDateFormat("d MMMM, EEEE", Locale("RU"))
             val result = (fullDate.format(myDate.getTime()))
